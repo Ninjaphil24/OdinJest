@@ -4,7 +4,8 @@
   "description": "",
   "main": "unit-testing-first-tests.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "watch": "jest --watch *.js"
   },
   "repository": {
     "type": "git",
