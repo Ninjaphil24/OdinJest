@@ -1,0 +1,23 @@
+{
+  "name": "odinjest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "unit-testing-first-tests.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ninjaphil24/OdinJest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ninjaphil24/OdinJest/issues"
+  },
+  "homepage": "https://github.com/Ninjaphil24/OdinJest#readme",
+  "devDependencies": {
+    "jest": "^28.0.2"
+  }
+}
