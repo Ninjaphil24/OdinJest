@@ -1,8 +1,18 @@
-function orderTotal(order) {
-    return order.items.reduce((prev, cur) => cur.price * (cur.quantity || 1) + prev, 0)
-  }
-  
-  if (orderTotal({
+const orderTotal = require('./order-total')
+
+it('works', ()=>{
+   expect(1).toBe(1) 
+})
+
+it('Quantity', () => {
+    expect(orderTotal({
+        items: [
+          { 'name': 'Dragon candy', price: 2, quantity: 3 }
+        ]
+      })).toBe(6)
+})
+
+if (orderTotal({
     items: [
       { 'name': 'Dragon candy', price: 2, quantity: 3 }
     ]
