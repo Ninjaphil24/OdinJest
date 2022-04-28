@@ -33,11 +33,42 @@ function rot13(str) {
 }
 console.log(rot13("HELLO PEOPLE"))
 
+function analyzeArray(arr) {
+    
+       const sum= arr.reduce((a,b)=>a+b,0)
+       const avg = (sum/arr.length)
+
+       const min = Math.min(...arr)
+       const max = Math.max(...arr)
+       const length = arr.length
+    return {
+        average: avg,
+        min: min,
+        max: max,
+        length: length
+    }
+}
+console.log(analyzeArray([1,8,3,4,2,6]))
+const arr = [1,8,3,4,2,6]
+const object = analyzeArray([1,8,3,4,2,6]);
+
+console.log(object)
+
+// const object = {
+//   average: 4,
+//   min: 1,
+//   max: 8,
+//   length: 6
+// };
+
+console.log(object.average, object.min)
+
 
 module.exports = {
     method1: orderTotal,
     method2: capitalizeTest,
     method3: reverseString,
     method4: math,
-    method5: rot13
+    method5: rot13,
+    method6: analyzeArray
 }

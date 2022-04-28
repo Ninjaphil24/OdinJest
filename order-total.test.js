@@ -4,6 +4,7 @@ const capitalizeTest = modules.method2
 const reverseString = modules.method3
 const math = modules.method4
 const rot13=modules.method5
+const analyzeArray=modules.method6
 
 
 
@@ -49,3 +50,10 @@ it('Check Fail: Happy Path (Ex 1)', ()=>
   it('Math', ()=>expect(math(1,2)).toBe(3))
   
   it('Cypher', ()=>expect(rot13("HELLO PEOPLE")).toBe("URYYB CRBCYR"))
+
+  it('Array Analysis', ()=>expect(analyzeArray([1,8,3,4,2,6])).toStrictEqual({
+    average: 4,
+    length: 6,
+    min: 1,
+    max: 8
+  }))
