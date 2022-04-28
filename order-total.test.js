@@ -1,12 +1,15 @@
 const modules = require('./order-total')
 const orderTotal = modules.method1
 const capitalizeTest = modules.method2
+const reverseString = modules.method3
+const math = modules.method4
+const rot13=modules.method5
 
 
 
-// it('works', ()=>{
-//    expect(1).toBe(1) 
-// })
+it('works', ()=>{
+   expect(1).toBe(1) 
+})
 
 it('Quantity', () => 
     expect(orderTotal({
@@ -41,3 +44,8 @@ it('Check Fail: Happy Path (Ex 1)', ()=>
   it('Capitalize', ()=>
   expect(capitalizeTest("test")).toBe("Test"))
    
+  it('Reverse', ()=>expect(reverseString("Hello")).toBe("olleH"))
+
+  it('Math', ()=>expect(math(1,2)).toBe(3))
+  
+  it('Cypher', ()=>expect(rot13("HELLO PEOPLE")).toBe("URYYB CRBCYR"))
