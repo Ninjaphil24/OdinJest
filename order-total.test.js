@@ -1,8 +1,12 @@
-const orderTotal = require('./order-total')
+const modules = require('./order-total')
+const orderTotal = modules.method1
+const capitalizeTest = modules.method2
 
-it('works', ()=>{
-   expect(1).toBe(1) 
-})
+
+
+// it('works', ()=>{
+//    expect(1).toBe(1) 
+// })
 
 it('Quantity', () => 
     expect(orderTotal({
@@ -34,4 +38,6 @@ it('Check Fail: Happy Path (Ex 1)', ()=>
     ]
   })).toBe(60))
   
+  it('Capitalize', ()=>
+  expect(capitalizeTest("test")).toBe("Test"))
    
